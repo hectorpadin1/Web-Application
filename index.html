@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Pokémon</title>
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
+      <meta charset="utf-8">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link rel="icon" type="image/png" href="img/pokeball_PNG21.png">
+      <link rel="stylesheet" type="text/css" href="css/styles.css">
+      <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+
+  </head>
+  <body>
+    <header>
+        <a href="index.html" class="header-brand">PokéSearch</a>
+        <nav>
+          <ul>
+            <li><a href="https://github.com/ipm-fic/03-web-hectorpadin">Código</a></li>
+            <li><a href="https://www.fic.udc.es/">Fic</a></li>
+            <li><a href="mailto:a.corujo@udc.es,hector.padin@udc.es">Contacto</a></li>
+          </ul>
+          <a href="https://www.udc.es/" class="UDC">UDC</a>
+        </nav>
+    </header>
+    <section class="vertical-center">
+    	<img class="headerlogo" src="img/headerlogo.png" alt=""/>
+      <h1>Pokémon Search</h1>
+      <div id="content">
+        <div id="search">
+          <div class="formrow" id="filters">
+            <label class="typelabel">Filter your search by type:</label>
+            <select title="Select Type" id="type">
+            </select>
+            <button class="finalbutton" id="submit">Search</button>
+          </div>
+        </div>
+      </div>
+      <!-- INFO POKEMON -->
+      <div class="info"></div>
+
+      <!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="pokemondata">
+      <h2 class="pokedata">Pokémon Data</h2>
+
+            <!-- ESTO NO SE PUEDE TENER AQUI NO SE PUEDE NO SE PUEDE. HAY QUE LLAMARLO DIRECTAMENTE DESDE EL JS COMO HICIMOS CON LOS SPRITES Y USANDO UN DIV. SRC NO PUEDE QUEDAR VACÍO -->
+
+      <img src="img/pokeball_PNG21.png" class="pokemondetailed" alt="Pokeball" id="pokemon-image"/>
+
+       <!-- ESTO NO SE PUEDE TENER AQUI NO SE PUEDE NO SE PUEDE. HAY QUE LLAMARLO DIRECTAMENTE DESDE EL JS COMO HICIMOS CON LOS SPRITES Y USANDO UN DIV. SRC NO PUEDE QUEDAR VACÍO -->
+
+    
+      <h2>Basic Info</h2>
+      <p>National Pokédex#: <span id="national-pokedex"></span></p>
+      <p>Region: <span id="pokemon-region"></span></p>
+      <p>Type: <span id="pokemon-type"></span></p>
+      <p>Abilities: <span id="pokemon-abilities"></span></p>
+      <h2>Base Stats</h2>
+     
+        <p>HP: <span class="stat-hp-gauge"></span></p>
+        <p>Attack: <span class="stat-attack-gauge"></span></p>
+        <p>Defense: <span class="stat-defense-gauge"></span></p>
+        <p>Special Attack: <span class="stat-special-attack-gauge"></span></p>
+        <p>Special Defense: <span class="stat-special-defense-gauge"></span></p>
+        <p>Speed: <span class="stat-speed-gauge"></span></p>
+      <p>Total Base Stats: <span id="total-base-stats"></span></p>
+      <!-- Para legendarios -->
+      <p><span class="pokemon-base-label"></span></p>
+    </div>
+  </div>
+
+</div>
+
+
+      
+
+    </section>
+
+    <script src="js/jssync.js"></script>
+    
+
+
+  </body>
+  
+</html>
